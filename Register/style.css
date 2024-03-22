@@ -3,8 +3,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
-    
+    font-family: "Poppins";    
 }
 body{
     background:linear-gradient(rgba(75, 37, 1, 0.4),rgba(66, 32, 1, 0.2)),url('Main.jpg') ;
@@ -230,4 +229,12 @@ nav{
 }
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+footer {
+    background: rgb(99, 50, 5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }

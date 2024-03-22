@@ -87,3 +87,11 @@ section a:hover{
     background: white;
     transition: 0.4s linear;
 }
+
+footer {
+    background: rgb(99, 50, 5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}

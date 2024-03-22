@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Information</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            Fetal-X
+        </div>
+         <div class="menu">
+            <a href="http://127.0.0.1:5500/Main_page/code/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/AboutUs/index.html">About Us</a>                
+            <a href="">We Recommend</a>
+            <a href="http://127.0.0.1:5500/ContactUs/index.html">Contact Us</a>
+         </div>
+         <div class="Register">
+            <a href="http://127.0.0.1:5500/Main_page/code/index.html">LogOut</a>
+         </div>
+    </nav>
+  
+    <h1>IMAGE UPLOAD</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <label for="file">Select an image to upload:</label>
+      <input class="iinput" type="file" id="file" name="file" />
+      <input class="butn" type="submit" value="Upload" />
+    </form>
+    <div class="predict"></div>
+    <footer>
+      &copy; Team 17. All rights reserved.
+    </footer>
+
+  </body>
+</html>
