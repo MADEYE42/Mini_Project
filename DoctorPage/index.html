@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Fetal-X
+        </div>
+        <div class="mennu">
+            <a href="http://127.0.0.1:5500/Main_page/code/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/AboutUs/index.html">About Us</a>
+            <a href="">We Recommend</a>
+            <a href="http://127.0.0.1:5500/ContactUs/index.html">Contact Us</a>
+        </div>
+
+    </nav>
+    <div class="wrapper">
+        <div class="menu">
+            <p>Choose the city Near you :</p>
+            <select id="city">
+                <option value="mumbai">Mumbai</option>
+                <option value="thane">Thane</option>
+                <option value="kolhapur">Kolhapur</option>
+                <option value="nagpur">Nagpur</option>
+                <option value="nashik">Nashik</option>
+                <option value="mahad">Mahad</option>
+                <option value="navi_mumbai">Navi Mumbai</option>
+            </select>
+        </div>
+        <div class="content">
+            <div id="mumbai" class="data">
+                <div class="image-container">
+                    <img class="image" src="Gouresh.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="thane" class="data">
+                <div class="image-container">
+                    <img class="image" src="Aryan.jpeg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="kolhapur" class="data">
+                <div class="image-container">
+                    <img class="image" src="Vaishnavi.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="nagpur" class="data">
+                <div class="image-container">
+                    <img class="image" src="Vivek.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="nashik" class="data">
+                <div class="image-container">
+                    <img class="image" src="Nishika.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="mahad" class="data">
+                <div class="image-container">
+                    <img class="image" src="Gouresh.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+            <div id="navi_mumbai" class="data">
+                <div class="image-container">
+                    <img class="image" src="Gouresh.jpg" alt="Description">
+                </div>
+                <p><b>Full Name : </b><span> Gouresh Madye</span></p>
+                <p><b>Email : </b><span>gmadye13@gmail.com</span></p>
+                <p><b>Phone Number : </b><span>+91-9987387639</span></p>
+                <p><b>Clinic Address : </b><span>502,Shubh Ashish ,Mulund East</span></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; Team 17. All rights reserved.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#city").on('change', function () {
+                $(".data").hide();
+                $("#" + $(this).val()).fadeIn(700);
+            }).change();
+        })
+    </script>
+</body>
+
+</html>
