@@ -14,7 +14,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def create_database():
     conn = sqlite3.connect(os.path.join(current_location, 'login.db'))
     c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS users(name TEXT, email VARCHAR(100), password VARCHAR(40))''')
+    c.execute('''CREATE TABLE IF NOT EXISTS users(name TEXT, email VARCHAR(100), city TEXT,purpose TEXT)''')
     conn.commit()
     conn.close()
 
@@ -53,13 +53,14 @@ def sign_up():
         # print(request.form)
         sName = request.form['name']
         sEM = request.form['sign-up-email']
-        sPW = request.form['sign-up-password']
-        print(sName, sEM, sPW)
+        sC = request.form['city']
+        use = request.form['using']
+        print(sName, sEM, sC,use)
         
         conn = sqlite3.connect(os.path.join(current_location, 'login.db'))
         cursor = conn.cursor()
-        query = 'INSERT INTO users VALUES (?, ?, ?)'
-        cursor.execute(query, (sName, sEM, sPW))
+        query = 'INSERT INTO users VALUES (?, ?, ?,?)'
+        cursor.execute(query, (sName, sEM, sC, use))
         conn.commit()
         conn.close()
         return redirect('/dashboard')    

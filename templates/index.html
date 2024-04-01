@@ -96,6 +96,7 @@ nav {
 
 .container span {
     font-size: 12px;
+    text-align:center;
 }
 
 .container a {
@@ -300,34 +301,31 @@ footer {
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form action="{{url_for('sign_up')}}" method="post">
-                <h1>Create Account</h1>
+                <h1>Register Yourself</h1>
                 <div class="social-icons">
-                    <a href="" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-youtube"></i></a>
                     <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <span>Or Use  your email for registration</span>
-                <input type="text" placeholder="Name" , name="name" , id="name">
-                <input type="email" placeholder="Email" , name="sign-up-email" , id="sign-up-email">
-                <input type="password" placeholder="Password" , name="sign-up-password" ,id="sign-up-password">
-                <button type="submit" id="submit-signup">Sign Up</button>
+                <span></span>
+                <input type="text" placeholder="Name" , name="name" , id="name" required>
+                <input type="email" placeholder="Email" , name="sign-up-email" , id="sign-up-email" required>
+                <input type="text" placeholder="City" , name="city" , id="city">
+                <input type="text" placeholder="Using for ?" , name="using" , id="using" required>
+                <button type="submit" id="submit-signup">Proceed</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form action="{{url_for('sign_in')}}" method="post">
-                <h1>Login</h1>
+                <h1>User Information </h1>
                 <div class="social-icons">
-                    <a href="" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-youtube"></i></a>
                     <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <span>Or Use  your email and password to sign in</span>
-                <input type="email" placeholder="Email" ,name="sign_in_email" , id="sign-in-email">
-                <input type="password" placeholder="Password" ,name="sign_in_password" , id="sign-in-password">
-                <a>Forgot Password?</a>
-                <button type="submit" id="submit_signin">Sign In</button>
+                <span>Help us gather information for the survey to help others </span>
             </form>
         </div>
         <div class="toggle-container">
@@ -336,14 +334,14 @@ footer {
                     <h1>Hello,Friend</h1>
                     <p>Enter your personal details</p>
                     <button class="hidden" id="login">
-                        Sign In
+                        Back
                     </button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Welcome Back!</h1>
+                    <h1>Welcome!</h1>
                     <p>Enter your personal details</p>
                     <button class="hidden" id="register">
-                        Sign Up
+                        Proceed
                     </button>
                 </div>
             </div>
